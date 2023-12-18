@@ -7,11 +7,11 @@ while true; do
     # Check if the key combination is Alt + ]
     if [[ $key == $'\e]' ]]; then
         if [[ $WIFI_STATE == "on" ]]; then
-            echo "wifi off"
+            echo "Nahhh"
             nmcli radio wifi off
             WIFI_STATE="off"
         else
-            echo "wifi on"
+            echo "Yurrr"
             nmcli radio wifi on
             WIFI_STATE="on"
         fi  
